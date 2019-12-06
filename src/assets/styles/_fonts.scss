@@ -1,0 +1,33 @@
+@import './variables.scss';
+
+.font-light {
+  font-weight: $font-weight-light;
+}
+
+.font-regular {
+  font-weight: $font-weight-regular;
+}
+
+.font-bold {
+  font-weight: $font-weight-bold;
+}
+
+.font-header {
+  font-family: $Sulphur-Point, sans-serif;
+}
+
+.font-color-base {
+  color: $font-color-text-base;
+}
+
+.font-color-teal {
+  color: $font-color-text-teal;
+}
+
+.font-color-red {
+  color: $font-color-text-red;
+}
+
+.font-color-lime {
+  color: $font-color-text-lime;
+}
