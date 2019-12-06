@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './variables.scss';
+@import './fonts';
+@import './utils';
+
+html,
+body {
+  font-family: $Titillium-Web, sans-serif;
+  color: $font-color-text-base;
+  height: 100%;
+}
