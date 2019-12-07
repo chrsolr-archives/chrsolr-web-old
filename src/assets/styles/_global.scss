@@ -17,7 +17,7 @@ a.bracket-animation {
 
   &:before {
     content: '[';
-    left: 1;
+    left: 5px;
   }
 
   &:after {
@@ -34,7 +34,7 @@ a.bracket-animation {
     }
 
     &:after {
-      opacity: 0;
+      opacity: 1;
       transform: translateX(0);
     }
   }
