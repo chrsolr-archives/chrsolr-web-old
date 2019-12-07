@@ -17,12 +17,12 @@ a.bracket-animation {
 
   &:before {
     content: '[';
-    left: -1.5rem;
+    left: 0;
   }
 
   &:after {
     content: ']';
-    right: -1.5rem;
+    right: 0;
   }
 
   &:hover {
@@ -30,12 +30,12 @@ a.bracket-animation {
 
     &:before {
       opacity: 1;
-      transform: translateX(1rem);
+      transform: translateX(5px);
     }
 
     &:after {
       opacity: 1;
-      transform: translateX(-1rem);
+      transform: translateX(-5px);
     }
   }
 
