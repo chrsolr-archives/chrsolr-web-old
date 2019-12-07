@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core'
-import { faGithub, faCodepen, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faCodepen, faInstagram, faTwitch } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'app-social-icons',
@@ -10,6 +10,7 @@ export class SocialIconsComponent implements OnInit {
   github = faGithub
   codepen = faCodepen
   instagram = faInstagram
+  twitch = faTwitch
 
   constructor() {}
 
