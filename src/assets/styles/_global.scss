@@ -45,3 +45,11 @@ a.bracket-animation {
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: 767px) {
+  a.bracket-animation {
+      &:before, &:after {
+          content: '';
+      }
+  }
+}
