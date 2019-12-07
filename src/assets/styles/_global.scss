@@ -11,7 +11,7 @@ a.bracket-animation {
   &:after {
     position: absolute;
     opacity: 1;
-    color: $font-color-text-red;
+    color: $font-color-text-teal;
     transition: all 0.3s ease;
   }
 
@@ -26,7 +26,7 @@ a.bracket-animation {
   }
 
   &:hover {
-    color: $font-color-text-teal !important;
+    color: $font-color-text-red !important;
 
     &:before {
       opacity: 1;
