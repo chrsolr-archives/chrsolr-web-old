@@ -1,0 +1,47 @@
+@import './variables';
+
+a.bracket-animation {
+  position: relative;
+  text-decoration: none;
+  color: $font-color-text-base;
+  display: inline-block;
+  transition: border-bottom 0.3s ease;
+
+  &:before,
+  &:after {
+    position: absolute;
+    opacity: 0;
+    color: $font-color-text-red;
+    transition: all 0.3s ease;
+  }
+
+  &:before {
+    content: '[';
+    left: -1.5rem;
+  }
+
+  &:after {
+    content: ']';
+    right: -1.5rem;
+  }
+
+  &:hover {
+    color: $font-color-text-teal !important;
+
+    &:before {
+      opacity: 1;
+      transform: translateX(1rem);
+    }
+
+    &:after {
+      opacity: 1;
+      transform: translateX(-1rem);
+    }
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}
