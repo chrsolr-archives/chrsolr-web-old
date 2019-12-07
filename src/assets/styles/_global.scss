@@ -30,12 +30,12 @@ a.bracket-animation {
 
     &:before {
       opacity: 1;
-      transform: translateX(10px);
+      transform: translateX(-10px);
     }
 
     &:after {
       opacity: 1;
-      transform: translateX(-10px);
+      transform: translateX(10px);
     }
   }
 
