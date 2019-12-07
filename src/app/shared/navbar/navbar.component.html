@@ -1,3 +1,30 @@
-<nav class="navbar navbar-light shadow-sm sticky-top bg-navbar">
-  <a class="navbar-brand font-color-base" routerLink="">{{ brandTitle }}</a>
+<nav class="navbar navbar-light fixed-top navbar-expand-lg">
+  <div class="container py-2">
+    <a class="navbar-brand font-color-base" routerLink="">{{ brandTitle }}</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbar-nav"
+      aria-controls="navbar-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed"
+    >
+      <div class="navbar-icon" [ngClass]="{ 'is-collapsed': isCollapsed }">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </div>
+    </button>
+
+    <div id="navbar-nav" class="collapse navbar-collapse" [collapse]="isCollapsed" [isAnimated]="true">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" routerLink="">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="">Login</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>

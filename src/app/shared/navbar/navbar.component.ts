@@ -8,6 +8,8 @@ import { Component, OnInit, Input } from '@angular/core'
 export class NavbarComponent implements OnInit {
   @Input('brand-title') brandTitle: string
 
+  isCollapsed = true
+
   constructor() {}
 
   ngOnInit() {}
