@@ -1,5 +1,11 @@
 @import './variables';
 
+.pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .bracket-animation {
   position: relative;
   text-decoration: none;
