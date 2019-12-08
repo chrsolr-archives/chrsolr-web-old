@@ -1,5 +1,9 @@
 @import './variables';
 
+.page-navbar-top-spacing {
+  margin-top: $page-navbar-top-spacing-md;
+}
+
 .pointer {
   &:hover {
     cursor: pointer;
@@ -58,5 +62,9 @@
     &:after {
       content: '';
     }
+  }
+
+  .page-navbar-top-spacing {
+    margin-top: $page-navbar-top-spacing-sm;
   }
 }
