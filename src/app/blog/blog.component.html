@@ -1,3 +1,11 @@
-<div class="container page-navbar-top-spacing">
-  <p>Coming Soon!!!</p>
+<div class="container page-navbar-top-spacing py-4">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12" *ngFor="let item of blog">
+          <app-blog-item [blog]="item"></app-blog-item>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

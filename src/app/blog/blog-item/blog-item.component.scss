@@ -1,0 +1,27 @@
+@import '../../../assets/styles/fonts';
+
+article {
+  margin-bottom: 2rem;
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $font-color-text-base;
+    text-decoration: none;
+
+    &:hover,
+    &:active {
+      color: $font-color-text-red;
+    }
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
