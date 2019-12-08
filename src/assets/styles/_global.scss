@@ -1,6 +1,6 @@
 @import './variables';
 
-a.bracket-animation {
+.bracket-animation {
   position: relative;
   text-decoration: none;
   color: $font-color-text-base;
@@ -10,19 +10,19 @@ a.bracket-animation {
   &:before,
   &:after {
     position: absolute;
-    opacity: 1;
+    opacity: 0;
     color: $font-color-text-teal;
     transition: all 0.3s ease;
   }
 
   &:before {
     content: '[';
-    left: -1rem;
+    left: -0.5rem;
   }
 
   &:after {
     content: ']';
-    right: 1rem;
+    right: -0.5rem;
   }
 
   &:hover {
@@ -30,12 +30,12 @@ a.bracket-animation {
 
     &:before {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateX(0.5rem);
     }
 
     &:after {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateX(-0.5rem);
     }
   }
 
@@ -47,9 +47,10 @@ a.bracket-animation {
 }
 
 @media screen and (max-width: 767px) {
-  a.bracket-animation {
-      &:before, &:after {
-          content: '';
-      }
+  .bracket-animation {
+    &:before,
+    &:after {
+      content: '';
+    }
   }
 }
