@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core'
 import { BlogService } from './blog.service'
-import { AngularFirestore } from '@angular/fire/firestore'
+import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore'
 import { Observable } from 'rxjs'
 
 interface Blog {
+  imageUrl: string
   title: string
   preview: string
 }
@@ -15,18 +16,12 @@ interface Blog {
   providers: [BlogService],
 })
 export class BlogComponent implements OnInit {
-  blog: Observable<any[]>
-  blogs
+  blog: Observable<Blog[]>
 
-  constructor(private blogService: BlogService, private db: AngularFirestore) {
-    // this.blogs = this.db.collection('blogs').valueChanges()
+  constructor(private db: AngularFirestore, private blogService: BlogService) {
+    const collection = db.collection<Blog>('blog')
+    this.blog = collection.valueChanges()
   }
 
-  ngOnInit() {
-
-    // console.log(this.blogs())
-    // this.blog = this.blogService.getBlog()
-
-    this.db.collection('blog').valueChanges().subscribe(v => console.log(v))
-  }
+  ngOnInit() {}
 }
