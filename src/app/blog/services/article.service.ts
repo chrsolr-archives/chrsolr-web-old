@@ -1,15 +1,7 @@
 import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore'
 import { Observable } from 'rxjs'
 import { Injectable } from '@angular/core'
-
-export interface Article {
-  imageUrl: string
-  title: string
-  preview: string
-  content: string
-  isActive: boolean
-  permalink: string
-}
+import { Article } from '../models/article.model'
 
 @Injectable()
 export class ArticleService {

@@ -1,11 +1,7 @@
 <div class="container page-navbar-top-spacing py-4">
   <div class="row">
     <div class="col-md-8">
-      <div class="row">
-        <div class="col-md-12" *ngFor="let item of articles">
-          <app-article-item [article]="item"></app-article-item>
-        </div>
-      </div>
+      <app-article-list [articles]="articles"></app-article-list>
     </div>
   </div>
 </div>
