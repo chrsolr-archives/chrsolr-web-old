@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-md-8">
       <div class="row">
-        <div class="col-md-12" *ngFor="let item of blog | async">
-          <app-blog-item [blog]="item"></app-blog-item>
+        <div class="col-md-12" *ngFor="let item of articles">
+          <app-article-item [article]="item"></app-article-item>
         </div>
       </div>
     </div>

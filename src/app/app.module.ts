@@ -13,10 +13,10 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component'
 import { HomeComponent } from './home/home.component'
 import { SocialIconsComponent } from './shared/components/social-icons/social-icons.component'
 import { BlogComponent } from './blog/blog.component'
-import { BlogItemComponent } from './blog/blog-item/blog-item.component'
+import { ArticleItemComponent } from './blog/article-item/article-item.component'
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, SocialIconsComponent, BlogComponent, BlogItemComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, SocialIconsComponent, BlogComponent, ArticleItemComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
