@@ -1,10 +1,10 @@
 <article>
-  <a href="#">
+  <a [routerLink]="['/blog', article.permalink]">
     <img class="img-fluid" src="{{ article.imageUrl }}" alt="{{ article.title }}" />
   </a>
-  <a href="#" class="title">
+  <a [routerLink]="['/blog', article.permalink]" class="title">
     {{ article.title }}
   </a>
   <p>{{ article.preview }}</p>
-  <a href="#">read more...</a>
+  <a [routerLink]="['/blog', article.permalink]">read more...</a>
 </article>

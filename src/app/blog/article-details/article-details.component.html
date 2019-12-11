@@ -1,0 +1,15 @@
+<div class="container page-navbar-top-spacing py-4">
+  <article *ngIf="article">
+    <a href="#">
+      <img class="img-fluid" src="{{ article.imageUrl }}" alt="{{ article.title }}" />
+    </a>
+    <span href="#" class="title">
+      {{ article.title }}
+    </span>
+    <p>By Christian Soler</p>
+    <hr />
+    <markdown ngPreserveWhitespaces>
+      {{ content }}
+    </markdown>
+  </article>
+</div>
